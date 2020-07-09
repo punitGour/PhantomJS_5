@@ -30,6 +30,8 @@ phases:
           - ls
           - cd target
           - ls
+          - cd surefire-reports
+          - ls
           - curl -H "Content-Type:text/xml" -X POST -H "Authorization:Bearer $token"  --data @"target/surefire-reports/TEST-JunitProject_2.JunitProject_2.FirstTest.xml" https://xraydemoone.atlassian.net/api/v1/import/execution/junit?projectKey=J1&testPlanKey=J1-2&revision=Version-1.0
           - echo "done"
           
