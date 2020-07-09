@@ -23,7 +23,7 @@ phases:
   build:
      commands:
           - echo "building my amazing repo..."
-          - chmod +x lib/geckodriver
+          - chmod +x lib/phantomjs
           - mvn test
           
           
