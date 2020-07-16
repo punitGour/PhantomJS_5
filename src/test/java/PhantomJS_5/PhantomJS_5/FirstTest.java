@@ -31,7 +31,7 @@ public class FirstTest {
 		//driver.get(baseUrl);
 
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Welcome: Mercury Tours", driver.getTitle());
+		Assert.assertEquals("", driver.getTitle());
 
 		driver.quit();
 	}
